@@ -1,9 +1,9 @@
 # 📊 Superstore Sales & Profit Analysis Dashboard
 
 ## 🚀 Project Overview
-This project analyzes retail sales data from the Superstore dataset to uncover key business insights related to revenue, profitability, discounts, and regional performance.
+This project analyzes retail sales data from the Superstore dataset to identify key drivers of revenue and profitability. The analysis focuses on uncovering loss-making areas, understanding the impact of discounts, and providing actionable business recommendations.
 
-The workflow covers the complete data analysis pipeline:
+The complete workflow followed in this project:
 **Excel → SQL → Power BI**
 
 - Data sourced from Excel dataset  
@@ -12,12 +12,24 @@ The workflow covers the complete data analysis pipeline:
 
 ---
 
+## ❓ Business Problem
+The business is generating strong revenue but facing inconsistent profitability across products and regions.  
+Certain categories are producing losses despite high sales, indicating issues in pricing, discount strategy, or cost management.
+
+The goal is to:
+- Identify loss-making products and categories  
+- Analyze the impact of discounts on profit  
+- Evaluate regional performance  
+- Provide actionable recommendations to improve profitability  
+
+---
+
 ## 🎯 Objectives
 - Analyze revenue and profit trends over time  
-- Identify profit-driving and loss-making products  
-- Understand the impact of discounts on profitability  
-- Compare regional performance  
-- Build a business-ready interactive dashboard  
+- Identify top-performing and loss-making sub-categories  
+- Understand how discounts affect profitability  
+- Compare regional contribution to profit  
+- Build a business-ready dashboard  
 
 ---
 
@@ -25,7 +37,7 @@ The workflow covers the complete data analysis pipeline:
 
 ### 1️⃣ Data Source (Excel)
 - Dataset: Sample Superstore  
-- Format: CSV / Excel  
+- Format: CSV  
 - Contains:
   - Orders, Customers, Products  
   - Sales, Profit, Discount, Quantity  
@@ -37,14 +49,13 @@ The workflow covers the complete data analysis pipeline:
 Data was imported into MySQL and analyzed using structured queries.
 
 #### 🔍 Key SQL Analysis:
-- Total Revenue & Profit Calculation  
+- Total Revenue & Profit  
 - Monthly Revenue Trends  
 - Category-wise Performance  
 - Loss-making Sub-Categories  
 - Discount vs Profit Analysis  
 
-📁 SQL queries available in: /sql/analysis.sql
-
+📁 SQL file: /sql/analysis.sql
 
 ---
 
@@ -52,68 +63,68 @@ Data was imported into MySQL and analyzed using structured queries.
 An interactive dashboard was built to present insights visually.
 
 #### 📊 Dashboard Features:
-- KPI Cards:
-  - Total Revenue
-  - Total Profit
-  - Profit Margin %
-
-- Revenue & Profit Trend (Time Series)
-
+- KPI Cards (Revenue, Profit, Profit Margin)  
+- Revenue & Profit Trend  
 - Profit Analysis by Sub-Category  
-  → Identifies top and loss-making products  
-
 - Profit by Region  
-  → Compares regional performance  
-
 - Business Insight Highlight  
 
-📁 Dashboard file: dashboard.pbix
-
+📁 Dashboard file: /dashboard/dashboard.pbix
 
 ---
 
 ## 🔍 Key Insights
-
 - 📈 Revenue shows a consistent upward trend from 2014 to 2017  
-- ⚠️ High discounts significantly reduce profitability  
+- ⚠️ High discounts are strongly associated with negative profit  
 - ❌ Tables and Bookcases are major loss-making sub-categories  
-- 💰 Copiers and Phones are the most profitable products  
-- 🌍 West region contributes the highest profit  
+- 💰 Copiers and Phones generate the highest profit  
+- 🌍 West region contributes the highest overall profit  
+
+---
+
+## 📈 Business Recommendations
+- Limit discounts beyond 40% to prevent margin loss  
+- Re-evaluate pricing strategy for loss-making categories like Tables and Bookcases  
+- Focus on high-profit products such as Copiers and Phones  
+- Optimize discount strategy instead of aggressive price cuts  
+- Invest more in high-performing regions like the West  
 
 ---
 
 ## 🛠 Tools & Technologies
-
 - Excel → Data source  
 - MySQL → Data analysis  
-- Power BI → Dashboard & visualization  
+- Power BI → Visualization  
 
 ---
 
 ## 📁 Project Structure
 Superstore-Sales-Profit-Dashboard/
 │
-├── dashboard.pbix
-├── dashboard.png
-├── README.md
+├── data/
+│   └── superstore.csv
 │
-└── sql/
-└── analysis.sql
-
+├── sql/
+│   └── analysis.sql
+│
+├── dashboard/
+│   └── dashboard.pbix
+│
+├── images/
+│   └── dashboard.png
+│
+└── README.md
 
 ---
 
 ## 📸 Dashboard Preview
-
 ![Dashboard Preview](Superstore%20Sales%20%26%20Profit%20Analysis/Images/dashboard.png)
 
 ---
 
 ## 🚀 How to Use
-
 1. Clone the repository:
-git clone https://github.com/prashantyas/Superstore-Sales-Profit-Analysis.git
-
+git clone https://github.com/your-username/superstore-sales-profit-dashboard.git
 
 2. Open:
 - `.pbix` file in Power BI Desktop  
@@ -122,15 +133,13 @@ git clone https://github.com/prashantyas/Superstore-Sales-Profit-Analysis.git
 ---
 
 ## 💡 Business Impact
-
 This analysis helps businesses:
-- Reduce losses by controlling discount strategies  
-- Focus on high-performing products  
-- Improve pricing and cost optimization  
+- Reduce losses caused by excessive discounting  
+- Improve pricing strategies  
+- Focus on profitable products and regions  
 - Make data-driven decisions  
 
 ---
 
 ## 📬 Contact
-
 Feel free to connect for feedback or collaboration.
