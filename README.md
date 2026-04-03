@@ -105,7 +105,8 @@ Superstore-Sales-Profit-Dashboard/
 
 ## 📸 Dashboard Preview
 
-![Dashboard Preview](dashboard.png)
+
+![Dashboard Preview](Images/dashboard.png)
 
 ---
 
